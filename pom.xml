@@ -23,12 +23,6 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-	<dependency>
-		<groupId>org.apache.maven.plugins</groupId>
- 		<artifactId>maven-surefire-plugin</artifactId>
- 		<version>3.0.0-M1</version>
-		<scope>test</scope>
-	</dependency>
 	    <dependency>
     		<groupId>org.apache.logging.log4j</groupId>
     		<artifactId>log4j-api</artifactId>
@@ -43,6 +37,14 @@
     <build>
         <pluginManagement>
             <plugins>
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-surefire-plugin</artifactId>
+			<version>3.0.0-M2</version>
+			<configuration>
+			  <useSystemClassLoader>false</useSystemClassLoader>
+			</configuration>
+		</plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-checkstyle-plugin</artifactId>
