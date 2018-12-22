@@ -28,11 +28,6 @@
     		<artifactId>log4j-api</artifactId>
     		<version>2.11.1</version>
 	    </dependency>
-	    <dependency>
-   		 <groupId>org.apache.logging.log4j</groupId>
-  		 <artifactId>log4j-core</artifactId>
-    		<version>2.11.1</version>
-  	    </dependency>
     </dependencies>
     <build>
         <pluginManagement>
@@ -74,24 +69,10 @@
                 <artifactId>maven-checkstyle-plugin</artifactId>
             </plugin>
 
-            <!--
-                You can run jacoco in the default profile with:
-                mvn jacoco:prepare-agent test jacoco:report
-            -->
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.1</version>
-            </plugin>
         </plugins>
     </build>
     <reporting>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.0.0</version>
-            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
