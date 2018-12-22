@@ -18,7 +18,7 @@
 
 	<properties>
 		<exec.mainClass>com.example.demo.DemoApp</exec.mainClass>
-		<sonar.host.url>http://localhost:9000</sonar.host.url>
+		<sonar.host.url>${SONAR_HOST}:9000</sonar.host.url>
 		<sonar.projectName>bla</sonar.projectName>
 		<sonar.login>admin</sonar.login>
 		<sonar.password>admin</sonar.password>
