@@ -13,6 +13,8 @@ public class DemoApplication {
 	final static Logger logger = Logger.getLogger(DataLoader.class);
 
 	public static void main(String[] args) {
+
+		logger.info("It's OK !");
 		SpringApplication.run(DemoApplication.class, args);
 	}
 }

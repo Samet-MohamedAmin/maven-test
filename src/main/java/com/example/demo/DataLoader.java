@@ -13,8 +13,8 @@ public class DataLoader implements CommandLineRunner{
     
     final static Logger logger = Logger.getLogger(DataLoader.class);
 
-    @Autowired
-    PersonRepository personRepository;
+    // @Autowired
+    // PersonRepository personRepository;
 
     @Override
     public void run(String... args) throws Exception {
